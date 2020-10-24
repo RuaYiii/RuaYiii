@@ -13,7 +13,7 @@ def nautual_add(x,y):
         for j in range(x.shape[1]):
             x[i,j] +=y[i,j]
     return x
-
+pass
     
     
 
