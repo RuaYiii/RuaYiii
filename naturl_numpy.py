@@ -36,7 +36,7 @@ def natural_matrix_vector_dot(x,y):
         for j in range(x.shape[1]):#C
             z[i]+=x[i,j]*y[j]
     return z
-def natural_matrix_dot():  #这就是实际的矩阵乘法辣
+def natural_matrix_dot(x,y):  #这就是实际的矩阵乘法辣
     assert len(x.shape)==2
     assert len(y.shape)==2
     assert len(x.shape[1])==len(y.shape[0])
