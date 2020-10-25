@@ -24,14 +24,28 @@ def natural_vector_dot(x,y): #点积
     for i in range(x.shape[0]):
         z+=x[i]*y[i]
     return z
-def natural_matrax_vector_dot(x,y):
+def natural_matrix_vector_dot(x,y):
     assert len(x.shape)==2
     assert len(y.shape)==1
     assert x.shape[1]==y.shape[0]
     z= np.zeros(x.shape[0])
     for i in range(x.shape[0]):#ROW
+        '''
+        或者 z[i]=natural_vector_dot(x[i,:],y)
+        '''
         for j in range(x.shape[1]):#C
             z[i]+=x[i,j]*y[j]
+    return z
+def natural_matrix_dot():  #这就是实际的矩阵乘法辣
+    assert len(x.shape)==2
+    assert len(y.shape)==2
+    assert len(x.shape[1])==len(y.shape[0])
+    z= np.zeros((x.shape[0],y.shape[1]))
+    for i in range(x.shape[0]):
+        for j in range(y.shape[1]):
+            row_x=x[i,:]
+            column_y=y[:,j]
+            z[i,j]=natural_vector_dot(row_x,column_y)
     return z
 
 
