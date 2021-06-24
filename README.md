@@ -1,7 +1,6 @@
 ### RuaYiii
-> 没啥可说的
+> 我对我自己你怀有极大的蔑视
 
-**希望不要一直菜下去**
 <!--
 **RuaYiii/RuaYiii** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
